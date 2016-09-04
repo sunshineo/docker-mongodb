@@ -9,6 +9,8 @@ else
     mongod &
     echo "Sleep for 5 seconds to make sure mongod started."
     sleep 5
+    echo "Remove existing admin user if already exists."
+    mongo --eval "db.dropUser('admin');"
     echo "Set admin password."
     mongo --eval "db.createUser({ user: 'admin', pwd: '$ADMIN_PASSWORD', roles: [ { role: \"userAdminAnyDatabase\", db: \"admin\" } ] });"
     echo "Admin password set. Stop mongod."
