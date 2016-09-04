@@ -11,7 +11,7 @@ docker run -it --rm -e ADMIN_PASSWORD=password sunshineo/mongo
 ```
 ##The username is 'admin'. I will make it a env var in future if I have time.
 
-##Setting the password cost about 15 seconds.
+##Setting the password add about 15 seconds to start time.
 Read https://github.com/sunshineo/docker-mongodb/blob/master/new-entrypoint.sh and you will understand.
 
 ##That is all. Nothing fancy.
