@@ -1,6 +1,6 @@
 FROM mongo:3.2.9
 
-COPY ./docker-mongodb-entrypoint.sh /docker-mongodb-entrypoint.sh
+COPY ./docker-mongo-entrypoint.sh /docker-mongo-entrypoint.sh
 
-ENTRYPOINT ["/docker-mongodb-entrypoint.sh"]
+ENTRYPOINT ["/docker-mongo-entrypoint.sh"]
 CMD ["mongod"]
