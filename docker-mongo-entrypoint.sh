@@ -26,7 +26,7 @@ else
     echo "Set admin password."
     echo -e "use $ADMIN_DATABASE\n db.createUser({ user: '$ADMIN_USERNAME', pwd: '$ADMIN_PASSWORD', roles: [ { role: \"userAdminAnyDatabase\", db: \"admin\" } ] });" | mongo
     echo "Admin password set. Stop mongod."
-    pkill -f mongod
+    pkill -x mongod
     echo "Sleep for 5 seconds to make sure mongod is stopped."
     sleep 5
 fi
