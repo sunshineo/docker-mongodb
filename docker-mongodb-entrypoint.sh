@@ -31,5 +31,5 @@ else
     sleep 5
 fi
 
-echo "Call old entrypoint to start"
+echo "Call mongo docker image entrypoint to start"
 ./entrypoint.sh $1

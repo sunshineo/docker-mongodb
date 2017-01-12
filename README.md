@@ -23,6 +23,6 @@ sunshineo/docker-mongodb
 But I highly suggest when you overwrite those, instead of using cmd line like above, use this image as base image and create your own docker image and simply export env variables
 
 ##Setting the password add about 15 seconds to start time.
-Read https://github.com/sunshineo/docker-mongodb/blob/master/new-entrypoint.sh and you will understand.
+Read https://github.com/sunshineo/docker-mongodb/blob/master/docker-mongodb-entrypoint.sh and you will understand.
 
 ##That is all. Nothing fancy.
